@@ -1,6 +1,8 @@
 package com.cursedarcangel;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -16,11 +18,8 @@ public class CraftList {
         Scanner scanner = new Scanner(System.in);
         Gson gson = new Gson();
         Reader reader = null;
-        try {
-            reader = Files.newBufferedReader(Paths.get("recipes.json"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        InputStream input = CraftList.class.getResourceAsStream("/recipes.json");
+        reader = new InputStreamReader(input);
         Map<String, Object > recipes = gson.fromJson(reader, Map.class);
         HashMap<String, Object> materialsPerItem = new HashMap<>();
         for (Map.Entry<String, Object > index : recipes.entrySet()) {
