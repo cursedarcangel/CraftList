@@ -4,25 +4,15 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Map;
 import com.google.gson.Gson;
 import java.util.Scanner;
 import java.util.HashMap;
 
 public class CraftList {
-    static String jsonFile = "recipes.json";
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("What do you want to craft?");
-        String craft = scanner.nextLine();
-        System.out.println("How many do you want to craft?");
-        int amount = scanner.nextInt();
-        parseJson(craft, amount);
-    }
-    public static void parseJson(String craft, int amount) {
+    public static String parseJson(String craft, Integer amount) {
+        String output = "<html>";
+        String recipeNotFound = "<html>";
         Gson gson = new Gson();
         Reader reader = null;
         InputStream input = CraftList.class.getResourceAsStream("/recipes.json");
@@ -36,10 +26,14 @@ public class CraftList {
         Map<String, Double> mats = (Map<String, Double>) materialsPerItem.get(craft);
 
         if (mats == null) {
-            System.out.println("Sorry, we don't currently have that recipe. Try again! (No capital letters, no plural)");
+            recipeNotFound += "Sorry, we don't <br>currently have that recipe. Try again! <br>(No capital letters, <br>no plural)";
+            return recipeNotFound + "</html>";
+        } else if (amount == 0 || amount == null) {
+            System.out.println("Put in how many you want to craft");
         } else {
             for (Map.Entry<String, Double> index : mats.entrySet()) {
-                System.out.println(index.getKey() + ":" + Math.round(index.getValue() * amount));
+                // System.out.println(index.getKey() + ":" + Math.round(index.getValue() * amount));
+                output += index.getKey() + ":" + String.valueOf(Math.round(index.getValue() * amount)) + "<br>";
             }
             //cleaning up
             try {
@@ -48,5 +42,6 @@ public class CraftList {
                 e.printStackTrace();
             }
         }
+        return output + "</html>";
     }
 }
