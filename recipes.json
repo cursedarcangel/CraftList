@@ -1,13 +1,13 @@
 {
   "observer": {
-    "cobblestone": "6",
-    "redstone": "2",
-    "quartz": "1"
+    "cobblestone": 6,
+    "redstone": 2,
+    "quartz": 1
   },
   "piston": {
-    "cobblestone": "4",
-    "planks": "3",
-    "redstone": "1",
-    "iron": "1"
+    "cobblestone": 4,
+    "planks": 3,
+    "redstone": 1,
+    "iron": 1
   }
 }
