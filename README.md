@@ -1,4 +1,4 @@
-# CraftList
+# CraftList (command line version)
 
 This is a tool for finding exactly how many items you need to craft something.
 
