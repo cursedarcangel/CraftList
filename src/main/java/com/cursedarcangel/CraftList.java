@@ -32,8 +32,10 @@ public class CraftList {
             System.out.println("Put in how many you want to craft");
         } else {
             for (Map.Entry<String, Double> index : mats.entrySet()) {
-                // System.out.println(index.getKey() + ":" + Math.round(index.getValue() * amount));
-                output += index.getKey() + ":" + String.valueOf(Math.round(index.getValue() * amount)) + "<br>";
+                int numOfMats = (int) Math.round(index.getValue() * amount);
+                int stacks = numOfMats / 64;
+                int remainder = (numOfMats % 64);
+                output += index.getKey() + ":" + String.valueOf(stacks) + " stack(s) and " + " " + String.valueOf(remainder) + " items" + "<br>";
             }
             //cleaning up
             try {

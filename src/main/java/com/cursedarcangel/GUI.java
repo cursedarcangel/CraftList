@@ -34,7 +34,7 @@ public class GUI implements ActionListener {
         calculate.addActionListener(new GUI());
         calculate.setBounds(150, 150, 100, 50);
 
-        result.setBounds(100, 200, 150, 100);
+        result.setBounds(100, 200, 250, 100);
 
         panel.add(whatCraft);
         panel.add(wantCraft);
