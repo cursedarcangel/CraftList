@@ -35,7 +35,7 @@ public class CraftList {
                 int numOfMats = (int) Math.round(index.getValue() * amount);
                 int stacks = numOfMats / 64;
                 int remainder = (numOfMats % 64);
-                output += index.getKey() + ":" + String.valueOf(stacks) + " stack(s) and " + " " + String.valueOf(remainder) + " items" + "<br>";
+                output += index.getKey() + " : " "(" + numOfMats ") " + String.valueOf(stacks) + " stack(s) and " + " " + String.valueOf(remainder) + " items" + "<br>";
             }
             //cleaning up
             try {
