@@ -39,7 +39,10 @@ public class CraftList {
             System.out.println("Sorry, we don't currently have that recipe. Try again! (No capital letters, no plural)");
         } else {
             for (Map.Entry<String, Double> index : mats.entrySet()) {
-                System.out.println(index.getKey() + ":" + Math.round(index.getValue() * amount));
+                int numOfMats = (int) Math.round(index.getValue() * amount);
+                int stacks = numOfMats / 64;
+                int remainder = (numOfMats % 64);
+                System.out.println(index.getKey() + ":" + String.valueOf(stacks) + " stack(s) and " + " " + String.valueOf(remainder) + " items");
             }
             //cleaning up
             try {
