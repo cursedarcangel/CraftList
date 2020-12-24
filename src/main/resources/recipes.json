@@ -694,5 +694,12 @@
   "book": {
      "paper": 3,
      "leather": 1
+  },
+  "fence": {
+     "stick": 0.66667,
+     "plank": 1.33334
+  },
+  "stick": {
+     "plank": 0.5
   }
 }
