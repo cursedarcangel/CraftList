@@ -3,3 +3,6 @@
 *.xml
 *.class
 build/resources/main/recipes.json
+*.lock
+*.jar
+*.bin
