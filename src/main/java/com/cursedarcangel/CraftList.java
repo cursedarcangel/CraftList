@@ -58,11 +58,13 @@ public class CraftList {
 	    //calculating the number of stacks and remainder, returning it
             for (Map.Entry<String, Double> index : mats.entrySet()) {
                 int numOfMats = (int) Math.round(index.getValue() * amount);
+
+		//this is the stacks and remainder that we return
                 int stacks = numOfMats / 64;
                 int remainder = (numOfMats % 64);
                 System.out.println(index.getKey() + " : " + "(" + String.valueOf(numOfMats) + ") " + String.valueOf(stacks) + " stack(s) and " + String.valueOf(remainder) + " items");
             }
-            //cleaning up
+            //cleaning up, closing the reader
             try {
                 reader.close();
             } catch (IOException e) {
