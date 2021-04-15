@@ -155,8 +155,8 @@
      "gold ingot": 9
   },
   "stained glass": {
-     "glass": 8,
-     "dye": 1
+     "glass": 1,
+     "dye": 0.125
   },
   "stair": {
      "material of your choice": 6
