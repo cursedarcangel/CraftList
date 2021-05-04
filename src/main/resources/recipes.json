@@ -701,5 +701,9 @@
   },
   "stick": {
      "plank": 0.5
+  },
+  "sign": {
+	  "stick": 0.33334,
+	  "planks": 0.5
   }
 }
