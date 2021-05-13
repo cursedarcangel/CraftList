@@ -703,7 +703,11 @@
      "plank": 0.5
   },
   "sign": {
-	  "stick": 0.33334,
-	  "planks": 2
+     "stick": 0.33334,
+     "planks": 2
+  },
+  "rails": {
+     "iron": 0.375,
+     "sticks": 0.0625
   }
 }
