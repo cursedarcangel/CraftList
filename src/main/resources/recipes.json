@@ -709,5 +709,8 @@
   "rails": {
      "iron": 0.375,
      "sticks": 0.0625
+  },
+  "iron bars": {
+     "iron ingots": 0.75
   }
 }
