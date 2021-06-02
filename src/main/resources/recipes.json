@@ -715,5 +715,8 @@
   },
   "trapdoors": {
      "planks": 3
+  },
+  "glass panes": {
+     "glass": 0.75
   }
 }
