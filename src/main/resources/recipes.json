@@ -711,12 +711,12 @@
      "sticks": 0.0625
   },
   "iron bars": {
-     "iron ingots": 0.75
+     "iron ingots": 0.375
   },
   "trapdoors": {
      "planks": 3
   },
   "glass panes": {
-     "glass": 0.75
+     "glass": 0.375
   }
 }
