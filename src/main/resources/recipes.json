@@ -712,5 +712,8 @@
   },
   "iron bars": {
      "iron ingots": 0.75
+  },
+  "trapdoors": {
+     "planks": 3
   }
 }
