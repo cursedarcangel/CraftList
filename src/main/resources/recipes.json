@@ -1,12 +1,12 @@
 {
-  "nether bricks": {
+  "nether brick": {
      "nether brick": 4
   },
-  "red nether bricks": {
+  "red nether brick": {
      "nether brick": 2,
      "nether wart": 2
   },
-  "chiseled nether bricks": {
+  "chiseled nether brick": {
      "nether brick slab": 2
   },
   "block of quartz": {
@@ -219,7 +219,7 @@
   "wool": {
      "string": 4
   },
-  "planks": {
+  "plank": {
      "log": 0.25
   },
   "scaffolding": {
@@ -347,7 +347,7 @@
      "planks": 8,
      "diamond": 1
   },
-  "stained glass panes": {
+  "stained glass pane": {
      "glass pane": 8,
      "dye": 1
   },
@@ -706,8 +706,17 @@
      "plank": 2,
      "stick":0.33334
   },
-  "rails": {
+  "rail": {
      "iron": 0.375,
      "sticks": 0.0625
+  }
+  "iron bar": {
+     "iron ingots": 0.375
+  },
+  "trapdoor": {
+     "planks": 3
+  },
+  "glass pane": {
+     "glass": 0.375
   }
 }
